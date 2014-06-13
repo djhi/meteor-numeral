@@ -4,7 +4,11 @@ Package.describe({
 
 Package.on_use(function(api) {
   api.export('numeral');
-  api.add_files(['numeral/numeral.js', 'numeral/languages.js', 'meteor-numeral.js'], ['server','client']);
+  api.add_files([
+  	'meteor-numeral-hack-for-languages.js', 
+  	'numeral/numeral.js', 
+  	'numeral/languages.js', 
+  	'meteor-numeral.js'], ['server','client']);
 });
 
 Package.on_test(function (api) {
